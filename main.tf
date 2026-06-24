@@ -15,3 +15,8 @@ provider "azurerm" {
 variable "subscription_id" {
   type = string
 }
+
+resource "azurerm_resource_group" "rg" {
+  name     = "github-actions-rg"
+  location = "Central India"
+}
