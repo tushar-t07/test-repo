@@ -1,0 +1,17 @@
+name: first_pipeline
+
+on:
+  push: 
+    branches:  
+       - main
+
+jobs:
+  hellojob:
+    runs-on: ubuntu-latest
+    steps:
+         - name: Checkout Code
+           uses: actions/checkout@v4
+
+         -  name: Print message
+            uses: echo "Hello TUSHAR bhai!! pipeline chal gayiii! " 
+       
